@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+:root {
+  --custom-shadow-1: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+  --color-dark-navy: #121826;
+  --color-grey: #9da3ae;
+  --color-light-grey: #e5e7eb;
+  --color-navy: #212936;
+  --color-light-blue: #dee9fc;
+  --color-light-pink: #fbe5e6;
+  --color-light-yellow: #fceed8;
+  --color-silver: #d2d5da;
+  --font-family-1: "Outfit", "Inter", "Segoe UI", "Helvetica", Arial, sans-serif;
+  --font-size-body: 1rem;
+  --font-size-h2: 1.25rem;
+  --font-size-h1: 2.5rem;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.5;
+}
+
+main {
+  background-image: url("./resources/Background_image.svg");
+  background-color: var(--color-dark-navy);
+}
+
+/*# sourceMappingURL=style.css.map */
