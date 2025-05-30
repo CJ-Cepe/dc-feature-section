@@ -45,11 +45,18 @@ header {
   margin-bottom: var(--outer-padding);
 }
 header h1 {
+  display: inline-block;
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-semibold);
+  max-width: 15ch;
+  transition: text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header h1:hover, header h1:focus {
+  color: var(--color-light-yellow);
+  text-shadow: 0 0 16px rgba(255, 255, 255, 0.6), 0 0 32px rgba(255, 255, 255, 0.4);
 }
 header span {
-  display: inline-block;
+  display: block;
   color: var(--color-grey);
   margin-top: 0.5rem;
 }
@@ -67,15 +74,20 @@ article {
   padding: var(--inner-padding);
   border-radius: 1rem;
   overflow: hidden;
+  box-shadow: var(--custom-shadow-1);
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+article:hover, article:focus {
+  transform: scale(1.04);
 }
 article div:nth-child(1) {
   display: inline-block;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: var(--color-light-yellow);
+  background-color: var(--mycolor, white);
   aspect-ratio: 1/1;
   width: fit-content;
   display: grid;
@@ -96,6 +108,19 @@ article picture {
 }
 article picture img {
   width: 100%;
+  object-fit: cover;
+}
+
+article:nth-child(1) > div {
+  --mycolor: var(--color-light-yellow);
+}
+
+article:nth-child(2) > div {
+  --mycolor: var(--color-light-blue);
+}
+
+article:nth-child(3) > div {
+  --mycolor: var(--color-light-pink);
 }
 
 /*# sourceMappingURL=style.css.map */
