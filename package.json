@@ -1,0 +1,15 @@
+{
+  "name": "dc-feature-section",
+  "version": "1.0.0",
+  "description": "![Thumbnail for the Simple Feature Section coding challenge](./thumbnail.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss ./style.scss"
+  },
+  "author": "CJ-Cepe",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
