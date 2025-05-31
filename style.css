@@ -15,6 +15,9 @@
   --color-light-yellow: #fceed8;
   --color-silver: #d2d5da;
   --font-family-1: "Outfit", "Inter", "Segoe UI", "Helvetica", Arial, sans-serif;
+  --font-family-2: "Apple Color Emoji", "Twemoji Mozilla", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji", "EmojiOne Color", "Android Emoji",
+    sans-serif;
   --font-size-body: 1rem;
   --font-size-h2: 1.25rem;
   --font-size-h1: clamp(2.25rem, 2rem + 0.625vw, 2.5rem);
@@ -27,7 +30,7 @@
 body {
   height: 100vh;
   height: 100dvh;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 main {
@@ -36,8 +39,8 @@ main {
   background-color: var(--color-dark-navy);
   font-family: var(--font-family-1);
   color: var(--color-light-grey);
-  text-wrap: wrap;
   padding: var(--outer-padding);
+  text-wrap: wrap;
 }
 
 header {
@@ -84,10 +87,10 @@ article:hover, article:focus {
   transform: scale(1.04);
 }
 article div:nth-child(1) {
-  display: inline-block;
-  padding: 0.5rem;
-  border-radius: 50%;
+  font-family: var(--font-family-2);
   background-color: var(--mycolor, white);
+  padding: 1rem;
+  border-radius: 50%;
   aspect-ratio: 1/1;
   width: fit-content;
   display: grid;
