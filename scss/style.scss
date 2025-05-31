@@ -5,7 +5,7 @@
 }
 
 :root {
-  --custom-shadow-1: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+  --custom-shadow-1: 0px 0px 10px 0px rgba(17, 23, 41, 0.15);
 
   --color-dark-navy: #121826;
   --color-grey: #9da3ae;
@@ -41,6 +41,7 @@ body {
   min-height: 100dvh;
   background-image: url("./resources/Background_image.svg");
   background-color: var(--color-dark-navy);
+  background-size: cover;
 }
 
 main {
