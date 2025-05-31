@@ -59,7 +59,7 @@ header {
     display: inline-block;
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-semibold);
-    max-width: 15ch;
+    max-width: 26rem;
     line-height: 1.2;
 
     transition: text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -125,7 +125,7 @@ article {
   }
 
   p {
-    max-width: 22ch;
+    max-width: 14rem;
   }
 
   picture {
